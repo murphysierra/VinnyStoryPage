@@ -1,0 +1,6 @@
+{
+  "name": "VideoLoop",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./VideoLoop.js"
+}

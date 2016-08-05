@@ -1,9 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.css';
-import img from '../../public/images/IMG_0090.jpg';
 import Header from '../Header';
 import Footer from '../Footer';
+import VideoLoop from '../VideoLoop';
+import Photo from '../Photo';
+import TextContent from '../TextContent';
+import campusBmxOne from '../../public/images/campusBmxOne.jpg';
+import campusBmxTwo from '../../public/images/campusBmxTwo.jpg';
+import textPlaceHolder from '../../public/contentPlaceHolder.txt';
 
 class App extends Component {
 
@@ -45,7 +50,11 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
-        <img src={img} />
+          <VideoLoop />
+          <TextContent content="FRIK"/>
+          <Photo image={campusBmxOne} />
+          <TextContent content={textPlaceHolder} />
+          <Photo image={campusBmxTwo} />
         <Footer />
       </div>
     ) : this.props.children;
