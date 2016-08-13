@@ -5,10 +5,16 @@ import Header from '../Header';
 import Footer from '../Footer';
 import VideoLoop from '../VideoLoop';
 import Photo from '../Photo';
+import AnchoredPhoto from '../AnchoredPhoto';
 import TextContent from '../TextContent';
+import TextPhotoContent from '../TextPhotoContent';
+import EmtpyOverlay from '../EmptyOverlay';
 import campusBmxOne from '../../public/images/campusBmxOne.jpg';
 import campusBmxTwo from '../../public/images/campusBmxTwo.jpg';
-import textPlaceHolder from '../../public/contentPlaceHolder.txt';
+import campusBmxThree from '../../public/images/campusBmxThree.jpg';
+import contentPlaceHolder from '../../public/contentPlaceHolder.txt';
+import Overlay from '../Overlay';
+import { Parallax, Background } from 'react-parallax';
 
 class App extends Component {
 
@@ -52,9 +58,32 @@ class App extends Component {
         <Header />
           <VideoLoop />
           <TextContent content="FRIK"/>
-          <Photo image={campusBmxOne} />
-          <TextContent content={textPlaceHolder} />
-          <Photo image={campusBmxTwo} />
+          <AnchoredPhoto image={campusBmxOne} />
+          <EmtpyOverlay />
+          <TextPhotoContent textContent={contentPlaceHolder}
+                            photoContent={campusBmxThree} />
+          <Parallax bgImage={campusBmxTwo} strength={200}>
+            <br/>
+            <p> {contentPlaceHolder} </p>
+          </Parallax>
+          <TextContent />
+          <Parallax bgImage={campusBmxThree} strength={400}>
+            <Overlay />
+          </Parallax>
+        <TextContent />
+        <Parallax bgImage={campusBmxThree} strength={200}>
+          <div className={s.space} >
+            <Overlay textContent={contentPlaceHolder} />
+          </div>
+        </Parallax>
+        <TextContent  />
+        <Parallax strength={400}>
+          <Background>
+            <VideoLoop />
+          </Background>
+          <Overlay />
+        </Parallax>
+        <TextContent />
         <Footer />
       </div>
     ) : this.props.children;

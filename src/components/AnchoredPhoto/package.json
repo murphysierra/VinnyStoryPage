@@ -1,0 +1,6 @@
+{
+  "name": "AnchoredPhoto",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AnchoredPhoto.js"
+}

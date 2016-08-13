@@ -6,7 +6,7 @@ class VideoLoop extends Component {
   render() {
     return (
       <div className={s.root}>
-        <iframe src="http://player.vimeo.com/video/141461861?autoplay=1&loop=1"
+        <iframe src="http://player.vimeo.com/video/141461861"
                 className={s.container}
                 frameBorder="0" />
       </div>

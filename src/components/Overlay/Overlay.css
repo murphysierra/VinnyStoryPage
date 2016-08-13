@@ -1,0 +1,12 @@
+
+@import '../variables.css';
+
+.root {
+  background: transparent;
+  color: #fff;
+  height: 500px;
+}
+
+.content {
+  padding: 50px;
+}
