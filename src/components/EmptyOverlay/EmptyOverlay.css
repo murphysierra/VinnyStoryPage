@@ -10,6 +10,10 @@
 @import '../variables.css';
 
 .root {
+
+}
+
+.emptyOverlay {
   background: transparent;
   color: #fff;
   height: 100vw;

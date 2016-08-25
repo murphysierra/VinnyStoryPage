@@ -31,3 +31,11 @@
   padding: 30px;
   margin-left: 50px;
 }
+
+.textContainer .h3 {
+  margin: 0;
+}
+
+.textContainer .h4 {
+  margin-top: 0;
+}

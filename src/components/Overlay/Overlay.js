@@ -10,7 +10,7 @@ class Overlay extends Component {
   render() {
     return (
       <div className={s.root}>
-        <div className={s.content} >
+        <div className={s.overlayContent} >
           {this.props.textContent}
         </div>
       </div>

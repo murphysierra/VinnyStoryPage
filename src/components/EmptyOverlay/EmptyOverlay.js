@@ -7,7 +7,8 @@ class EmptyOverlay extends Component {
   render() {
     return (
       <div className={s.root}>
-
+        <div className={s.emptyOverlay} >
+        </div>
       </div>
     );
   }

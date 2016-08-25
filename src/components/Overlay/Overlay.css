@@ -4,9 +4,10 @@
 .root {
   background: transparent;
   color: #fff;
-  height: 500px;
+  height: inherit;
 }
 
-.content {
+.overlayContent {
   padding: 50px;
+  margin-left: 60%;
 }

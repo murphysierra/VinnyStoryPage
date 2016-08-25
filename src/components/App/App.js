@@ -4,7 +4,6 @@ import s from './App.css';
 import Header from '../Header';
 import Footer from '../Footer';
 import VideoLoop from '../VideoLoop';
-import Photo from '../Photo';
 import AnchoredPhoto from '../AnchoredPhoto';
 import TextContent from '../TextContent';
 import TextPhotoContent from '../TextPhotoContent';
@@ -62,12 +61,8 @@ class App extends Component {
           <EmtpyOverlay />
           <TextPhotoContent textContent={contentPlaceHolder}
                             photoContent={campusBmxThree} />
-          <Parallax bgImage={campusBmxTwo} strength={200}>
-            <br/>
-            <p> {contentPlaceHolder} </p>
-          </Parallax>
-          <TextContent />
           <Parallax bgImage={campusBmxThree} strength={400}>
+            <EmtpyOverlay />
             <Overlay />
           </Parallax>
         <TextContent />
@@ -77,13 +72,6 @@ class App extends Component {
           </div>
         </Parallax>
         <TextContent  />
-        <Parallax strength={400}>
-          <Background>
-            <VideoLoop />
-          </Background>
-          <Overlay />
-        </Parallax>
-        <TextContent />
         <Footer />
       </div>
     ) : this.props.children;

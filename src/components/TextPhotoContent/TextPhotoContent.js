@@ -14,9 +14,13 @@ class TextContent extends Component {
         <tbody>
         <tr className={s.container}>
           <td className={s.textContainer} >
-          {this.props.textContent}
+            <h4>
+              Vinny's story section 1 header <br/>
+              Author Person <br />
+              Other Info About Stuff
+            </h4>
+            {this.props.textContent}
           </td>
-          <td />
           <td>
             <img className={s.photoContainer} src={this.props.photoContent} />
           </td>
